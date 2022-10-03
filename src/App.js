@@ -30,10 +30,15 @@ function App() {
   },[list])
 
   return (
-    <div className="bg-red-100 h-screen w-screen flex items-center justify-center">
-      <ListView list={list} handleAdd={handleAdd}/>
-      <SearchForm filterList={filterList} filteredList={filteredList} />
+    <div className='bg-[#101721] text-white h-screen w-screen flex items-center justify-center flex-col '>
+      <h1 className='font-black text-3xl mb-8'>Search and Filter App</h1>
+      <div className="flex items-center justify-center">
+        
+        <ListView list={list} handleAdd={handleAdd}/>
+        <SearchForm filterList={filterList} filteredList={filteredList} />
+      </div>
     </div>
+
   );
 }
 
